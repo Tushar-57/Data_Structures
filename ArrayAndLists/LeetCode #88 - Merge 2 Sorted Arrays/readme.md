@@ -1,5 +1,6 @@
-Merging Two Sorted Arrays Using Two-Pointer Approach 🚀
-Problem Statement
+Merging Two Sorted Arrays Using a Two-Pointer Approach 🚀
+
+**Problem Statement: **
 You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, along with two integers m and n, representing the number of elements in nums1 and nums2, respectively.
 
 Your task is to merge nums1 and nums2 into a single sorted array, in-place within nums1.
@@ -9,21 +10,17 @@ Your task is to merge nums1 and nums2 into a single sorted array, in-place withi
 
 Example
 ✅ Input:
-ini
-Copy
-Edit
 nums1 = [1,2,3,0,0,0], m = 3  
 nums2 = [2,5,6], n = 3  
 🔹 Process:
 Merging [1,2,3] and [2,5,6].
 
 ✅ Output:
-csharp
-Copy
-Edit
 [1,2,2,3,5,6]  
 Optimized Approach: Two-Pointer Merging from the End 🔥
+
 Why Merge from the End?
+
 🔹 nums1 has extra space at the end, allowing us to place elements directly without shifting.
 🔹 By starting from the largest elements, we avoid unnecessary moves and overwrite operations.
 
@@ -39,9 +36,6 @@ Place the larger one at k and decrement the respective pointer.
 3️⃣ If elements remain in nums2, copy them directly into nums1.
 
 Code Implementation (Java)
-java
-Copy
-Edit
 public class Solution {
     public void mergingTwoArrays(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1;  // Last valid element in nums1
