@@ -36,6 +36,7 @@ Place the larger one at k and decrement the respective pointer.
 3️⃣ If elements remain in nums2, copy them directly into nums1.
 
 Code Implementation (Java)
+
 public class Solution {
     public void mergingTwoArrays(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1;  // Last valid element in nums1
@@ -59,6 +60,8 @@ public class Solution {
         // No need to handle nums1 since it's already in place
     }
 }
+
 Complexity Analysis ⏳
 ✅ Time Complexity: O(m + n) → Each element is processed once.
+
 ✅ Space Complexity: O(1) → No extra space used, merging is done in-place.
